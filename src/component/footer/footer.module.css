@@ -1,0 +1,43 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 68px;
+    background-color: #313423;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: env(safe-area-inset-bottom);
+    /* for iOS */
+    border-top: 1px solid #444;
+    z-index: 100;
+border-top-right-radius: 25px;
+border-top-left-radius: 25px;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #B9B8C3;
+    font-size: 12px;
+    gap: 4px;
+}
+
+.icon {
+    width: 29px;
+    height: 32px;
+    filter: brightness(0.8);
+    transition: filter 0.3s, transform 0.2s;
+}
+
+.active {
+    color: #EA7422;
+}
+
+.active .icon {
+    filter: brightness(1.5) saturate(2);
+    transform: scale(1.1);
+}
