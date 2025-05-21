@@ -23,12 +23,23 @@
     width: 43px;
     height: 43px;
 }
+.energyIcon {
+    width: 18px;
+    height: 20px;
+}
+.energyContainer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
 
 .name {
     font-family: 'Tektur', sans-serif;
     color: white;
+    background-color: inherit;
     font-size: 24px;
     font-weight: 600;
+    border: none;
 }
 
 .joinBtn {
