@@ -4,3 +4,9 @@
     background-repeat: no-repeat;
     min-height: 100vh;
 }
+
+.button {
+    padding: 10px 20px;
+    width: fit-content;
+    height: fit-content;
+}
