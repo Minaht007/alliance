@@ -5,6 +5,7 @@ import HomePage from "./pages/Home";
 import WeaponsPage from "./pages/Weapons";
 import NewsPage from "./pages/News";
 import styles from "./App.module.css";
+import ProfilePanel from "./component/userInfo/userInfo";
 
 const App = () => {
 	return (
@@ -18,6 +19,7 @@ const App = () => {
 						<Route path="/news" element={<NewsPage />} />
 					</Routes>
 				</main>
+				<ProfilePanel />
 				<Footer />
 			</div>
 		</Router>
