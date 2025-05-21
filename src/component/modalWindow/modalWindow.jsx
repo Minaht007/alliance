@@ -1,13 +1,14 @@
 
 
-const ModalWind = ({ onClose, children, button }) => {
+const ModalWind = ({ onClose, children, title, style }) => {
   return (
     <div>
       <div>
-        <div className=" relative py-20">
+        <div >
           <button onClick={onClose}></button>
+          <h1>{title}</h1>
           {children}
-          <button button={button}></button>
+          
         </div>
       </div>
     </div>
