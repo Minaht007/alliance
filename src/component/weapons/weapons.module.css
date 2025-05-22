@@ -1,12 +1,96 @@
 .wrapper {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalContainer {
+  height: fit-content;
+  width: 90%;
+  border: 1px solid #ea7422;
+  border-radius: 5px;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20;
+  text-align: center;
+  color: #fff;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgStyle {
+  display: flex;
+  width: 70%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;  
+}
+
+.pScript {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
 }
 
 .button {
-    padding: 10px 20px;
-    width: fit-content;
-    height: fit-content;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 32px;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #ea7422;
+  color: #fff;
 }
+
+.buttonActive {
+  background-color: #3f5330;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 32px;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.sliderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-wrap: nowrap;
+  }
+  
+  .arrowButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slideContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+
