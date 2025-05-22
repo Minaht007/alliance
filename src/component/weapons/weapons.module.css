@@ -28,6 +28,7 @@
 .imgContainer {
     display: flex;
     flex-direction: row;
+    background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
 }
 
 .imgStyle {
