@@ -1,0 +1,18 @@
+[
+    {
+        "img": "../../src/assets/tank/weaponTank.png",
+        "title": "tank"
+    },
+    {
+        "img": "../../src/assets/tank/weaponTank.png",
+        "title": "tank2"
+    },
+    {
+        "img": "../../src/assets/tank/weaponTank.png",
+        "title": "tank3"
+    },
+    {
+        "img": "../../src/assets/tank/weaponTank.png",
+        "title": "tank4"
+    }
+]
