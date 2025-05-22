@@ -14,25 +14,7 @@ const Weapons = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [showClearImage, setShowClearImage] = useState(false); 
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [slidesPerPage, setSlidesPerPage] = useState(1);
-  const totalSlides = weaponSlide.length;
 
-  const nextSlide = () => {
-    if (currentIndex === totalSlides - slidesPerPage) {
-      return setCurrentIndex(0);
-    }
-    const nextIndex = (currentIndex + 1) % totalSlides;
-    setCurrentIndex(nextIndex);
-  };
-
-  const prevSlide = () => {
-    if (currentIndex === 0) {
-      return setCurrentIndex(totalSlides - slidesPerPage);
-    }
-    const prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    setCurrentIndex(prevIndex);
-  };
 
   const handlers = useSwipeable({
     onSwipedLeft: () => nextSlide(),
@@ -42,6 +24,7 @@ const Weapons = () => {
   });
 
   return (
+
     <div
       className={styles.wrapper}
       style={{ backgroundImage: `url(${bgImage})` }}
@@ -110,6 +93,35 @@ const Weapons = () => {
 
     </div>
   );
+
+		<div className={styles.wrapper} style={{ backgroundImage: `url(${bgImage})` }}>
+			<ModalWind
+				title={"Танк"}
+				isOpen={modalOpen}
+				onClose={() => setModalOpen(false)}
+				style={"marginTop: '500px'"}
+			>
+				<div style={{ marginTop: "20px" }}>
+					<img
+						src={showClearImage ? tank : blurTank}
+						alt="tank"
+						style={{ width: "255px", height: "144px" }}
+					/>
+
+					{!showClearImage ? (
+						<button className={styles.button} onClick={() => setShowClearImage(!showClearImage)}>
+							Відкрити
+						</button>
+					) : (
+						<button className={styles.button} onClick={() => setShowClearImage(!showClearImage)}>
+							Відкрито
+						</button>
+					)}
+				</div>
+			</ModalWind>
+		</div>
+	);
+
 };
 
 export default Weapons;
