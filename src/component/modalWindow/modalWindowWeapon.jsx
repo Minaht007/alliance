@@ -4,7 +4,7 @@ const ModalWind = ({ onClose, children, title, }) => {
   return (
     <div className={styles.modalContainer}>
       <div>
-        <div className="flex flex-col justify-center items-center" >
+        <div>
           
           <h1 className={styles.title} >{title}</h1>
           {children}
