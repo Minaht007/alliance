@@ -14,11 +14,11 @@ const Weapons = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [showClearImage, setShowClearImage] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [slidesPerPage, setSlidesPerPage] = useState(1);
+  // const [slidesPerPage, setSlidesPerPage] = useState(1);
 	const totalSlides = weaponSlide.length;
 
   const nextSlide = () => {
-		if (currentIndex === totalSlides - slidesPerPage) {
+		if (currentIndex === totalSlides - 1) {
 			return setCurrentIndex(0);
 		}
 		const nextIndex = (currentIndex + 1) % totalSlides;
@@ -27,7 +27,7 @@ const Weapons = () => {
 
   const prevSlide = () => {
 		if (currentIndex === 0) {
-			return setCurrentIndex(totalSlides - slidesPerPage);
+			return setCurrentIndex(totalSlides - 1);
 		}
 		const prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
 		setCurrentIndex(prevIndex);
@@ -53,7 +53,7 @@ const Weapons = () => {
         <div {...handlers}>
           <div className={styles.sliderWrapper}>
             {weaponSlide
-              .slice(currentIndex, currentIndex + slidesPerPage)
+              .slice(currentIndex, currentIndex + 1)
               .map((slide) => (
                 <div key={slide.title} className={styles.slideContent}>
                   <div className={styles.imgContainer}>
@@ -118,16 +118,16 @@ const Weapons = () => {
           </div>
 
           <div className={styles.dotsContainer}>
-            {[...Array(Math.ceil(totalSlides / slidesPerPage)).keys()].map(
+            {[...Array(Math.ceil(totalSlides / 1)).keys()].map(
               (index) => (
                 <div
                   key={index}
                   className={`${styles.dot} ${
-                    currentIndex / slidesPerPage === index
+                    currentIndex / 1 === index
                       ? styles.activeDot
                       : ""
                   }`}
-                  onClick={() => setCurrentIndex(index * slidesPerPage)}
+                  onClick={() => setCurrentIndex(index * 1)}
                 />
               )
             )}

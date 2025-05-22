@@ -5,7 +5,7 @@ import HomePage from "./pages/Home";
 import WeaponsPage from "./pages/Weapons";
 import NewsPage from "./pages/News";
 import styles from "./App.module.css";
-import ProfilePanel from "./component/userInfo/userInfo";
+import ModalShell from "./component/modalShell/ModalShell";
 
 const App = () => {
 	return (
@@ -19,7 +19,7 @@ const App = () => {
 						<Route path="/news" element={<NewsPage />} />
 					</Routes>
 				</main>
-				<ProfilePanel />
+				<ModalShell />
 				<Footer />
 			</div>
 		</Router>
