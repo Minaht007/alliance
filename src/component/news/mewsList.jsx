@@ -25,7 +25,7 @@ const NewsList = () => {
 
         <div className={styles.newsListContainer}>
         {!showSubscription ? (
-          <ul>
+          <ul className={styles.ul}>
             {newsCard.map((item) => (
               <li key={item.title} className={styles.cardList}>
                 <img src={item.url} alt={item.title} className={styles.img} />
