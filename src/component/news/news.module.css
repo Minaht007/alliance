@@ -16,6 +16,15 @@
     left: 0;
     
 }
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
 .cardList {
     width: 95%;
     border: 1px solid #EA7422;
@@ -23,6 +32,8 @@
     margin: 16px 0;
     position: relative;
     background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
+    list-style: none;
+    padding: 0;
 }
 
 .img {
