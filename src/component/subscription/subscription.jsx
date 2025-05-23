@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./subscription.module.css";
-import isActive from "../../assets/icons/subscrip/checked.png"
+import isActive from "../../assets/icons/subscrip/checked.png";
 
 const propose = [
   {
@@ -22,39 +22,36 @@ const propose = [
 ];
 
 const Subscription = ({ page }) => {
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
-    const [selectedIndex, setSelectedIndex] = useState(null);
-
-    const handleSelect = (index) => {
-      setSelectedIndex(index);
-    };
-
+  const handleSelect = (index) => {
+    setSelectedIndex(index);
+  };
 
   return (
     <div className={styles.wrap}>
-   
-    <ul className={styles.ulContainer}>
-    <h1 className={styles.title} >Варіант підписки</h1>
-      {propose.map((item, index) => (
-        <li
-          key={item.title}
-          className={styles.li}
-          onClick={() => handleSelect(index)}
-          style={{ cursor: "pointer" }}
-        >
-          <div>
-            <img src={item.url} alt="coins" className={styles.img} />{" "}
-            <span className={styles.span}>{item.title}</span>{" "}
-          </div>
-          <div className={styles.checked}>
-            {selectedIndex === index && (
-              <img src={isActive} alt="isActive" width={26} height={26} />
-            )}
-          </div>
-        </li>
-      ))}
-    </ul>
-  </div>
+      <ul className={styles.ulContainer}>
+        <h1 className={styles.title}>Варіант підписки</h1>
+        {propose.map((item, index) => (
+          <li
+            key={item.title}
+            className={styles.li}
+            onClick={() => handleSelect(index)}
+            style={{ cursor: "pointer" }}
+          >
+            <div>
+              <img src={item.url} alt="coins" className={styles.img} />{" "}
+              <span className={styles.span}>{item.title}</span>{" "}
+            </div>
+            <div className={styles.checked}>
+              {selectedIndex === index && (
+                <img src={isActive} alt="isActive" width={26} height={26} />
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
