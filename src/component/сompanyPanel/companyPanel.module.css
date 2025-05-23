@@ -1,0 +1,58 @@
+.panel {
+    background: rgba(30, 30, 30, 0.8);
+    border: 1px solid #EA6B22;
+    padding: 34px;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Tektur', sans-serif;
+    text-align: center;
+    width: 80vw;
+}
+
+.stats {
+    margin: 16px 0;
+}
+
+.stats li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.itemContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.itemText {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.stats span {
+    color: #EA6B22;
+    margin-left: auto;
+}
+
+.button {
+    background-color: #3F5330;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonText {
+    font-size: 14px;
+    font-weight: 500;
+}
