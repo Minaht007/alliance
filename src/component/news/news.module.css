@@ -23,6 +23,7 @@
     padding: 0;
     justify-content: center;
     align-items: center;
+    padding: 60px 0;
 }
 
 .cardList {
@@ -47,6 +48,7 @@
     margin-right: auto;
     width: 67%;
     text-align: center;
+    padding: 16px 0;
 }
 
 .btmHeard {

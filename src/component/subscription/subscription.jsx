@@ -21,7 +21,7 @@ const propose = [
   },
 ];
 
-const Subscription = ({ page }) => {
+const Subscription = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   const handleSelect = (index) => {
@@ -29,7 +29,7 @@ const Subscription = ({ page }) => {
   };
 
   return (
-    <div>
+    <div className={styles.divContainer}>
       <ul className={styles.ulContainer}>
         <h1 className={styles.title}>Варіант підписки</h1>
         {propose.map((item, index) => (
@@ -39,10 +39,10 @@ const Subscription = ({ page }) => {
             onClick={() => handleSelect(index)}
             style={{ cursor: "pointer" }}
           >
-            <div>
+            
               <img src={item.url} alt="coins" className={styles.img} />{" "}
               <span className={styles.span}>{item.title}</span>{" "}
-            </div>
+            
             <div className={styles.checked}>
               {selectedIndex === index && (
                 <img src={isActive} alt="isActive" width={26} height={26} />
