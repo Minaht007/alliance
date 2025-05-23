@@ -29,7 +29,7 @@ const Subscription = ({ page }) => {
   };
 
   return (
-    <div className={styles.wrap}>
+    <div>
       <ul className={styles.ulContainer}>
         <h1 className={styles.title}>Варіант підписки</h1>
         {propose.map((item, index) => (

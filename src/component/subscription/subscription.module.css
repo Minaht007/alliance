@@ -1,7 +1,5 @@
 
-.wrap {
-    margin: auto;
-}
+
 
 .ulContainer {
     display: flex;
@@ -16,7 +14,8 @@
     left: 40px;
     padding-right: 40px;
     padding-bottom: 20px;   
-    width: 80vw; 
+    width: 80vw;     
+    background: linear-gradient(114.19deg, rgba(44, 44, 38, 0.6) 5.19%, rgba(62, 44, 21, 0.6) 98.99%);
 }
 
 .title { 
