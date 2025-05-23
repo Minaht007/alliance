@@ -1,0 +1,17 @@
+[
+    {
+        "title": "tank",
+        "url": "../../src/assets/newsImg/tank.png",
+        "script": "100 користувачів розблокували озброєння ‘Танк’ сьогодні"
+    },
+    {
+        "title": "trasure",
+        "url": "../../src/assets/newsImg/trasure.png",
+        "script": "10 000 одиниць допомоги було доставлено на фронт вчора"
+    },
+    {
+        "title": "air",
+        "url": "../../src/assets/newsImg/air.png",
+        "script": "100 користувачів розблокували озброєння Літак сьогодні"
+    },
+]

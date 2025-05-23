@@ -4,3 +4,64 @@
     background-repeat: no-repeat;
     min-height: 100vh;
 }
+
+
+.newsListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 6%;
+    left: 0;
+    
+}
+.cardList {
+    width: 95%;
+    border: 1px solid #EA7422;
+    border-radius: 5px;
+    margin: 16px 0;
+    position: relative;
+    background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.cardScript {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    text-align: center;
+}
+
+.btmHeard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: fit-content;
+}
+
+.btmNextPage {
+    background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.count {
+    color: #EA7422;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 6px;
+}
