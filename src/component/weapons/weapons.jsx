@@ -9,6 +9,7 @@ import weaponSlide from "../../../public/json/weaponSlyder.json";
 import arrowLeft from "../../assets/icons/modalWinIcons/arowLeft.png";
 import arrowRight from "../../assets/icons/modalWinIcons/arowRight.png";
 import { useSwipeable } from "react-swipeable";
+import wolf from "../../assets/img/weapons/wolf.png"
 
 const Weapons = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -45,6 +46,7 @@ const Weapons = () => {
       className={styles.wrapper}
       style={{ backgroundImage: `url(${bgImage})` }}
     >
+      <img src={wolf} alt="wolf" className={styles.wolfImg} />
       <ModalWind
         title={"Танк"}
         isOpen={modalOpen}
