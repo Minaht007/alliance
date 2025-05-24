@@ -9,7 +9,7 @@ import weaponSlide from "../../../public/json/weaponSlyder.json";
 import arrowLeft from "../../assets/icons/modalWinIcons/arowLeft.png";
 import arrowRight from "../../assets/icons/modalWinIcons/arowRight.png";
 import { useSwipeable } from "react-swipeable";
-import wolf from "../../assets/img/weapons/wolf.png"
+import wolf from "../../assets/img/weapons/wolf.jpg"
 
 const Weapons = () => {
   const [modalOpen, setModalOpen] = useState(false);
