@@ -94,11 +94,9 @@
     align-items: center;
   }
   
-  .wolfImg {
-    display: block;
-    justify-content: center;
+  .wolfImg {   
     width: 100vw;
-    height: 80%; 
+    height: auto; 
     margin: 0; 
     padding: 0;
   }
