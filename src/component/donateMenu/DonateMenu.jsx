@@ -5,11 +5,11 @@ import graf from "../../assets/icons/donate/graf.png";
 import share from "../../assets/icons/donate/share.png";
 
 const DonateMenu = () => {
-	const { setModalView } = useProfile();
+	const { setModalView, closeProfile } = useProfile();
 
 	return (
 		<div className={styles.inner}>
-			<button className={styles.close} onClick={() => setModalView("profile")}>
+			<button className={styles.close} onClick={closeProfile}>
 				<img src={closeIcon} alt="Закрити" />
 			</button>
 

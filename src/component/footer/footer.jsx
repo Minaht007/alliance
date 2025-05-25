@@ -16,21 +16,6 @@ const Footer = () => {
 
 	return (
 		<footer className={styles.footer}>
-			{/* {links.map((link) => (
-				<NavLink
-					key={link.to}
-					to={link.to}
-					className={({ isActive }) => (isActive ? `${styles.link} ${styles.active}` : styles.link)}
-				>
-					<img
-						src={(isActive)=>isActive ? link.orangeIcon : link.icon}
-						alt={link.label}
-						className={styles.icon}
-					/>
-
-					<span className={styles.label}>{link.label}</span>
-				</NavLink>
-			))} */}
 			{links.map((link) => (
 				<NavLink to={link.to} key={link.to} className={styles.link}>
 					{({ isActive }) => (
@@ -40,7 +25,7 @@ const Footer = () => {
 								alt={link.label}
 								className={styles.icon}
 							/>
-							<span className={isActive ? styles.active : ''}>{link.label}</span>
+							<span className={isActive ? styles.active : ""}>{link.label}</span>
 						</>
 					)}
 				</NavLink>

@@ -5,7 +5,15 @@
   min-height: 100vh;
   position: relative;
   display: flex;
+  justify-content: end;
+  align-items: center;
   flex-direction: column;
+}
+
+.wolfImg {
+  width: 100vw;
+  position: absolute;
+  top: 68px;
 }
 
 .modalContainer {
@@ -13,9 +21,8 @@
   width: 90%;
   border: 1px solid #ea7422;
   border-radius: 5px;
-  position: absolute;
-  top: 60%;
-  left: 5%;
+  z-index: 10;
+  margin-bottom: 85px;
   background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
 }
 
@@ -27,9 +34,9 @@
 }
 
 .imgContainer {
-    display: flex;
-    flex-direction: row;
-    
+  display: flex;
+  flex-direction: row;
+
 }
 
 .imgStyle {
@@ -37,7 +44,7 @@
   width: 70%;
   height: auto;
   margin-right: auto;
-  margin-left: auto;  
+  margin-left: auto;
 }
 
 .pScript {
@@ -73,32 +80,23 @@
 }
 
 .sliderWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    flex-wrap: nowrap;
-  }
-  
-  .arrowButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .slideContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .wolfImg {   
-    width: 100vw;
-    height: auto; 
-    margin: 0; 
-    padding: 0;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
 
+.arrowButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
 
+.slideContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

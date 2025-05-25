@@ -5,11 +5,11 @@ import share from "../../assets/icons/donate/share.png";
 import orangeCloseIcon from "../../assets/icons/userPanel/orangeClose.png";
 
 const InviteMenu = () => {
-	const { setModalView } = useProfile();
+	const { closeProfile } = useProfile();
 
 	return (
 		<div className={styles.inner}>
-			<button className={styles.close} onClick={() => setModalView("profile")}>
+			<button className={styles.close} onClick={closeProfile}>
 				<img src={orangeCloseIcon} alt="Закрити" />
 			</button>
 
