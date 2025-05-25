@@ -23,10 +23,12 @@
     width: 43px;
     height: 43px;
 }
+
 .energyIcon {
     width: 18px;
     height: 20px;
 }
+
 .energyContainer {
     display: flex;
     align-items: center;

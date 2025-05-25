@@ -5,10 +5,16 @@ const ProfileContext = createContext();
 export const ProfileProvider = ({ children }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [joinToAlliance, setJoinToAlliance] = useState(false);
-	const [modalView, setModalView] = useState("profile");
+	const [modalView, setModalView] = useState("donate");
 
 	const openProfile = () => setIsOpen(true);
-	const closeProfile = () => setIsOpen(false);
+	const openFromProfile = () => {
+		setModalView("profile");
+		setIsOpen(true);
+	};
+	const closeProfile = () => {
+		setIsOpen(false), setModalView("donate");
+	};
 
 	const joinAllians = () => setJoinToAlliance(true);
 	const leaveAllianse = () => setJoinToAlliance(false);
@@ -24,6 +30,7 @@ export const ProfileProvider = ({ children }) => {
 				joinToAlliance,
 				modalView,
 				setModalView,
+				openFromProfile,
 			}}
 		>
 			{children}

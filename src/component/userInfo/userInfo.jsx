@@ -8,7 +8,7 @@ import logoIcon from "../../assets/icons/header/logo.png";
 import closeIcon from "../../assets/icons/userPanel/close.png";
 import { useProfile } from "../../utils/useProfile";
 
-const ProfilePanel=()=> {
+const ProfilePanel = () => {
 	const { isOpen, leaveAllianse, setModalView, closeProfile } = useProfile();
 
 	if (!isOpen) return null;
@@ -34,7 +34,6 @@ const ProfilePanel=()=> {
 				</div>
 				<p className={styles.value}>10 000</p>
 			</div>
-
 			<div className={styles.item}>
 				<div className={styles.info}>
 					<div className={styles.info}>
@@ -69,6 +68,6 @@ const ProfilePanel=()=> {
 			</button>
 		</div>
 	);
-}
+};
 
 export default ProfilePanel;

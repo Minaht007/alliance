@@ -12,8 +12,8 @@
     /* for iOS */
     border-top: 1px solid #444;
     z-index: 100;
-border-top-right-radius: 25px;
-border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
 .link {
@@ -36,4 +36,3 @@ border-top-left-radius: 25px;
 .active {
     color: #EA7422;
 }
-

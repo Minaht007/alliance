@@ -1,8 +1,6 @@
 import { useProfile } from "../../utils/useProfile";
 import styles from "./modalShell.module.css";
 
-
-
 import ProfilePanel from "../userInfo/userInfo";
 import DonateMenu from "../donateMenu/DonateMenu";
 import InviteMenu from "../inviteMenu/InviteMenu";
@@ -15,7 +13,6 @@ const ModalShell = () => {
 	return (
 		<div className={styles.overlay}>
 			<div className={styles.panel}>
-
 				{modalView === "profile" && <ProfilePanel />}
 				{modalView === "donate" && <DonateMenu />}
 				{modalView === "invite" && <InviteMenu />}

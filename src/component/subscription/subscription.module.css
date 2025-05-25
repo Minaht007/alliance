@@ -1,27 +1,25 @@
-
 .divContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 80vh;
-
 }
 
 .ulContainer {
     display: flex;
-    flex-direction: column;   
-    justify-content: center;   
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     border: 1px solid #ea7422;
     border-radius: 5px;
-    width: 90vw;     
+    width: 90vw;
     padding: 20px;
     background: linear-gradient(114.19deg, rgba(44, 44, 38, 0.6) 5.19%, rgba(62, 44, 21, 0.6) 98.99%);
 }
 
-.title { 
-    font-size: 26px;  
+.title {
+    font-size: 26px;
     font-weight: 600;
     text-align: center;
 }
@@ -33,10 +31,10 @@
     background: #313423;
     box-shadow: rgba(0, 0, 0, 0.25);
     margin: 16px 0;
-    border-radius: 5px;    
+    border-radius: 5px;
     width: 100%;
     padding-top: 16px;
-    padding-bottom: 16px; 
+    padding-bottom: 16px;
     position: relative;
 }
 
@@ -51,6 +49,7 @@
     width: 16px;
     height: 19px;
 }
+
 .checked {
     position: absolute;
     top: 25%;
