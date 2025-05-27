@@ -30,7 +30,9 @@ const ProfilePanel = () => {
 						<p className={styles.label}>Потужність</p>
 					</div>
 
-					<button className={styles.btn}>Підвищити</button>
+					<button className={styles.btn} onClick={() => setModalView("subscription")}>
+						Підвищити
+					</button>
 				</div>
 				<p className={styles.value}>10 000</p>
 			</div>
@@ -41,7 +43,7 @@ const ProfilePanel = () => {
 						<p className={styles.label}>Ваш донат</p>
 					</div>
 
-					<button className={styles.btn} onClick={() => setModalView("donate")}>
+					<button className={styles.btn} onClick={() => setModalView("subscription")}>
 						Збільшити
 					</button>
 				</div>
@@ -55,7 +57,9 @@ const ProfilePanel = () => {
 						<p className={styles.label}>Ваш внесок</p>
 					</div>
 
-					<button className={styles.btn}>Покращити</button>
+					<button className={styles.btn} onClick={() => setModalView("subscription")}>
+						Покращити
+					</button>
 				</div>
 				<p className={styles.value}>
 					100 одиниць <br /> допомоги/день
