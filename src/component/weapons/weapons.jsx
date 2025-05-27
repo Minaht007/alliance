@@ -2,7 +2,6 @@ import bgImage from "../../assets/background/bg3.png";
 import styles from "./weapons.module.css";
 import ModalWind from "../modalWindow/modalWindowWeapon";
 import { useState } from "react";
-import blurTank from "../../assets/tank/tankBlure.png";
 import tank from "../../assets/tank/weaponTank.png";
 import lockImg from "../../assets/icons/modalWinIcons/lock.png";
 import weaponSlide from "../../../public/json/weaponSlyder.json";
@@ -57,9 +56,9 @@ const Weapons = () => {
 										<img src={arrowLeft} alt="arrowLeft" width={20} height={20} />
 									</button>
 									<img
-										src={showClearImage ? tank : blurTank}
+										src={tank}
 										alt="tank"
-										className={styles.imgStyle}
+										className={showClearImage ? `${styles.imgStyle}` : `${styles.imgStyleBlur}`}
 									/>
 									{/* стрідка в право */}
 									<button onClick={nextSlide} className={styles.arrowButton}>

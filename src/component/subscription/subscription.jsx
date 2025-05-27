@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./subscription.module.css";
 import isActive from "../../assets/icons/subscrip/checked.png";
+import { useProfile } from "../../utils/useProfile";
 
 const propose = [
 	{
@@ -23,20 +24,17 @@ const propose = [
 
 const Subscription = () => {
 	const [selectedIndex, setSelectedIndex] = useState(null);
-
-	const handleSelect = (index) => {
-		setSelectedIndex(index);
-	};
+	const { closeProfile } = useProfile();
 
 	return (
-		<div className={styles.divContainer}>
-			<ul className={styles.ulContainer}>
+		<div className={styles.divContainer} onClick={closeProfile}>
+			<ul className={styles.ulContainer} onClick={(e) => e.stopPropagation()}>
 				<h1 className={styles.title}>Варіант підписки</h1>
 				{propose.map((item, index) => (
 					<li
 						key={item.title}
 						className={styles.li}
-						onClick={() => handleSelect(index)}
+						onClick={() => setSelectedIndex(index)}
 						style={{ cursor: "pointer" }}
 					>
 						<img src={item.url} alt="coins" className={styles.img} />{" "}

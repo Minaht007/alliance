@@ -13,7 +13,7 @@ const DonateMenu = () => {
 				<img src={closeIcon} alt="Закрити" />
 			</button>
 
-			<button className={styles.btn}>
+			<button className={styles.btn} onClick={() => setModalView("profile")}>
 				Підвищити донат
 				<img src={graf} alt="донат" />
 			</button>

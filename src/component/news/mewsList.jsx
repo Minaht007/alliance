@@ -1,8 +1,6 @@
 import styles from "./news.module.css";
 import heardIcon from "../../assets/icons/heard.png";
 import nextPage from "../../assets/icons/nextPage.png";
-import { useState } from "react";
-import Subscription from "../subscription/subscription";
 
 const newsCard = [
 	{
@@ -26,33 +24,23 @@ const newsCard = [
 ];
 
 const NewsList = () => {
-	const [showSubscription, setShowSubscription] = useState(false);
-
-	const handleNextPageClick = () => {
-		setShowSubscription(true);
-	};
-
 	return (
 		<div className={styles.newsListContainer}>
-			{!showSubscription ? (
-				<ul className={styles.ul}>
-					{newsCard.map((item) => (
-						<li key={item.title} className={styles.cardList}>
-							<img src={item.url} alt={item.title} className={styles.img} />
-							<p className={styles.cardScript}>{item.script}</p>
-							<button className={styles.btmHeard}>
-								<img src={heardIcon} alt="heardIcon" width={21} height={18} />
-								<p className={styles.count}>{item.count}</p>
-							</button>
-							<button className={styles.btmNextPage} onClick={handleNextPageClick}>
-								<img src={nextPage} alt="nextPage" width={21} height={21} />
-							</button>
-						</li>
-					))}
-				</ul>
-			) : (
-				<Subscription />
-			)}
+			<ul className={styles.ul}>
+				{newsCard.map((item) => (
+					<li key={item.title} className={styles.cardList}>
+						<img src={item.url} alt={item.title} className={styles.img} />
+						<p className={styles.cardScript}>{item.script}</p>
+						<button className={styles.btmHeard}>
+							<img src={heardIcon} alt="heardIcon" width={21} height={18} />
+							<p className={styles.count}>{item.count}</p>
+						</button>
+						<button className={styles.btmNextPage}>
+							<img src={nextPage} alt="nextPage" width={21} height={21} />
+						</button>
+					</li>
+				))}
+			</ul>
 		</div>
 	);
 };
