@@ -19,7 +19,7 @@
 }
 
 .modalContainer {
-  height: fit-content;
+  height: 360px;
   width: 90%;
   border: 1px solid #ea7422;
   border-radius: 5px;
@@ -29,15 +29,28 @@
 }
 
 .title {
+  font-family: 'Tektur', sans-serif;
   font-weight: 600;
   font-size: 20;
   text-align: center;
   color: #fff;
+  padding-top: 12px;
+  padding-bottom: 8px;
 }
 
 .imgContainer {
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+
+.lockImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 56px;
+  height: 77px;
+  transform: translate(-50%, -50%);
 }
 
 .imgStyle {
@@ -56,11 +69,17 @@
     margin-left: auto;
 }
 
+.scriptConteiner {
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+
 .pScript {
+  font-family: 'Tektur', sans-serif;
   font-weight: 500;
   font-size: 14px;
   text-align: center;
-  color: #fff;
+  color: #fff;  
 }
 
 .button {
