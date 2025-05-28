@@ -8,34 +8,50 @@
   justify-content: end;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 16px;
 }
 
 .wolfImg {
   width: 100vw;
+  height: 400px;
   position: absolute;
-  top: 68px;
+  top: 70px;
+  border: none;
 }
 
 .modalContainer {
-  height: fit-content;
+  height: 360px;
   width: 90%;
   border: 1px solid #ea7422;
   border-radius: 5px;
   z-index: 10;
-  margin-bottom: 85px;
+  margin-bottom: 68px;
   background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
 }
 
 .title {
+  font-family: 'Tektur', sans-serif;
   font-weight: 600;
   font-size: 20;
   text-align: center;
   color: #fff;
+  padding-top: 12px;
+  padding-bottom: 8px;
 }
 
 .imgContainer {
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+
+.lockImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 56px;
+  height: 77px;
+  transform: translate(-50%, -50%);
 }
 
 .imgStyle {
@@ -54,11 +70,17 @@
     margin-left: auto;
 }
 
+.scriptConteiner {
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+
 .pScript {
+  font-family: 'Tektur', sans-serif;
   font-weight: 500;
   font-size: 14px;
   text-align: center;
-  color: #fff;
+  color: #fff;  
 }
 
 .button {
@@ -73,6 +95,11 @@
   border-radius: 5px;
   background-color: #ea7422;
   color: #fff;
+
+  font-family: 'Tektur', sans-serif;
+  font-size: 14px;
+    font-weight: 500;
+
 }
 
 .buttonActive {
@@ -101,6 +128,8 @@
   padding: 10px;
   display: flex;
   align-items: center;
+  /* width: 10px;
+  height: 17px; */
 }
 
 .slideContent {
