@@ -7,7 +7,7 @@ import question from "../../assets/icons/company/question.svg";
 
 const CompanyPanel = ({ onShowStrategy }) => (
 	<div className={styles.panel}>
-		<h2>Компанія</h2>
+		<h2 className={styles.title}>Компанія</h2>
 		<ul className={styles.stats}>
 			<li>
 				<div className={styles.itemContainer}>
@@ -17,19 +17,20 @@ const CompanyPanel = ({ onShowStrategy }) => (
 			</li>
 			<li>
 				<div className={styles.itemContainer}>
-					<img src={chest} /> <p className={styles.itemText}>Ресурси</p>
+					<img src={chest} /> <p className={styles.itemText}>Ресурси альянсу</p>
 				</div>
 				<span>308 500 грн/день</span>
 			</li>
 			<li>
 				<div className={styles.itemContainer}>
-					<img src={delivery} /> <p className={styles.itemText}>Допомога в день</p>
+					<img src={delivery} className={styles.delivery} />
+					<p className={styles.itemText}>Поставлено одиниць допомоги в день</p>
 				</div>
 				<span>10 158</span>
 			</li>
 			<li>
 				<div className={styles.itemContainer}>
-					<img src={box} /> <p className={styles.itemText}>Всього допомоги</p>
+					<img src={box} /> <p className={styles.itemText}>Всього поставлено допомоги </p>
 				</div>
 				<span>100 245</span>
 			</li>

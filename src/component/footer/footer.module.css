@@ -12,8 +12,8 @@
     /* for iOS */
     border-top: 1px solid #444;
     z-index: 100;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
+    border-radius: 25px 25px 0px 0px;
+    flex-shrink: 0;
 }
 
 .link {
@@ -24,13 +24,15 @@
     color: #B9B8C3;
     font-size: 12px;
     gap: 4px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .icon {
-    width: 29px;
-    height: 32px;
-    filter: brightness(0.8);
-    transition: filter 0.3s, transform 0.2s;
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
 }
 
 .active {

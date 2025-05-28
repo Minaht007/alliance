@@ -3,7 +3,7 @@ import energy from "../../assets/icons/company/energy.svg";
 import chest from "../../assets/icons/company/chest.svg";
 import delivery from "../../assets/icons/company/delivery.svg";
 import people from "../../assets/icons/company/people.svg";
-import close from "../../assets/icons/userPanel/orangeClose.png";
+import close from "../../assets/icons/strategy/close.png";
 
 const StrategyPanel = ({ onBack }) => (
 	<div className={styles.panel}>

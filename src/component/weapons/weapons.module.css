@@ -8,35 +8,40 @@
   justify-content: end;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 16px;
 }
 
 .wolfImg {
-  width: 100vw;
-  height: 400px;
+  /* width: 100vw;
+  height: 400px; */
   position: absolute;
-  top: 70px;
+  top: 68px;
   border: none;
+
+  width: 395.587px;
+  height: 354px;
+  flex-shrink: 0;
+  aspect-ratio: 395.59/354.00;
+  border-radius: 5px;
+  box-shadow: 8px 9px 7.9px 0px rgba(0, 0, 0, 0.25);
 }
 
 .modalContainer {
-  height: 360px;
   width: 90%;
   border: 1px solid #ea7422;
   border-radius: 5px;
   z-index: 10;
-  margin-bottom: 68px;
+  margin-bottom: 93px;
   background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
 }
 
 .title {
   font-family: 'Tektur', sans-serif;
   font-weight: 600;
-  font-size: 20;
   text-align: center;
   color: #fff;
   padding-top: 12px;
   padding-bottom: 8px;
+  font-size: 20px;
 }
 
 .imgContainer {
@@ -55,19 +60,18 @@
 }
 
 .imgStyle {
-  display: flex;
-  width: 70%;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 17.5px;
+  margin-left: 17.5px;
+  border-radius: 1px;
+  border: 1px solid #563925;
+  width: 255.484px;
+  height: 144px;
+  flex-shrink: 0;
+  aspect-ratio: 255.48/144.00;
 }
+
 .imgStyleBlur {
-  filter: blur(4px);
-  display: flex;
-    width: 70%;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
+  filter: blur(3.75px);
 }
 
 .scriptConteiner {
@@ -80,14 +84,16 @@
   font-weight: 500;
   font-size: 14px;
   text-align: center;
-  color: #fff;  
+  color: #FFF;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.84px;
 }
 
 .button {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8px;
   padding: 6px 32px;
   width: fit-content;
   height: fit-content;
@@ -95,11 +101,9 @@
   border-radius: 5px;
   background-color: #ea7422;
   color: #fff;
-
   font-family: 'Tektur', sans-serif;
   font-size: 14px;
-    font-weight: 500;
-
+  font-weight: 500;
 }
 
 .buttonActive {
@@ -121,19 +125,32 @@
   flex-wrap: nowrap;
 }
 
-.arrowButton {
+.arrowButtonLeft {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 10px;
+  padding-left: 22px;
   display: flex;
   align-items: center;
-  /* width: 10px;
-  height: 17px; */
+}
+
+.arrowButtonRight {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-right: 22px;
+  display: flex;
+  align-items: center;
 }
 
 .slideContent {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.arrowImg {
+  height: 18px;
+  width: 10px;
+  max-width: none;
 }

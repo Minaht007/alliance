@@ -4,7 +4,7 @@ import EnergyIcon from "../../assets/icons/header/energy.png";
 import { useProfile } from "../../utils/useProfile";
 
 const Header = () => {
-	const { openFromProfile, joinToAlliance, joinAllians } = useProfile();
+	const { openFromProfile, joinToAlliance } = useProfile();
 	return (
 		<div className={styles.header}>
 			<div className={styles.left}>
@@ -14,12 +14,12 @@ const Header = () => {
 				</button>
 			</div>
 			{!joinToAlliance ? (
-				<button className={styles.joinBtn} onClick={openFromProfile} >
+				<button className={styles.joinBtn} onClick={openFromProfile}>
 					Стати членом альянсу
 				</button>
 			) : (
-				<div className={styles.energyContainer} >
-					<p className={styles.name} >10000</p>
+				<div className={styles.energyContainer}>
+					<p className={styles.energy}>10 000</p>
 					<img src={EnergyIcon} alt="energy" className={styles.energyIcon} />
 				</div>
 			)}
@@ -28,5 +28,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// onClick={joinAllians}
