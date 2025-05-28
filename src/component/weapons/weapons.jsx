@@ -63,13 +63,12 @@ const Weapons = () => {
                     <img
                       src={arrowLeft}
                       alt="arrowLeft"
-                      width={20}
-                      height={20}
+                      width={10}
+                      height={17}
                     />
                   </button>
 
-				  
-					<img
+                  <img
                     src={tank}
                     alt="tank"
                     className={
@@ -78,16 +77,15 @@ const Weapons = () => {
                         : `${styles.imgStyleBlur}`
                     }
                   />
-				   <img src={lockImg} alt="lock" className={styles.lockImg} />
-				  
-                  
+                  <img src={lockImg} alt="lock" className={styles.lockImg} />
+
                   {/* стрідка в право */}
                   <button onClick={nextSlide} className={styles.arrowButton}>
                     <img
                       src={arrowRight}
                       alt="arrowRight"
-                      width={20}
-                      height={20}
+                      width={10}
+                      height={17}
                     />
                   </button>
                 </div>

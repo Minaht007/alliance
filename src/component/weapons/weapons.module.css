@@ -8,6 +8,7 @@
   justify-content: end;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 16px;
 }
 
 .wolfImg {
@@ -24,7 +25,7 @@
   border: 1px solid #ea7422;
   border-radius: 5px;
   z-index: 10;
-  margin-bottom: 85px;
+  margin-bottom: 68px;
   background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
 }
 
@@ -94,6 +95,11 @@
   border-radius: 5px;
   background-color: #ea7422;
   color: #fff;
+
+  font-family: 'Tektur', sans-serif;
+  font-size: 14px;
+    font-weight: 500;
+
 }
 
 .buttonActive {
@@ -122,6 +128,8 @@
   padding: 10px;
   display: flex;
   align-items: center;
+  /* width: 10px;
+  height: 17px; */
 }
 
 .slideContent {
