@@ -1,73 +1,67 @@
 .wrapper {
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-y: auto;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-
-.newsListContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 6%;
-    left: 0;
+    background-attachment: fixed;
 }
 
 .ul {
     display: flex;
     flex-direction: column;
-    padding: 0;
     justify-content: center;
     align-items: center;
-    padding: 60px 0;
+    margin-top: 93px;
+    margin-bottom: 80px;
 }
 
 .cardList {
-    width: 95%;
-    border: 1px solid #EA7422;
-    border-radius: 5px;
-    margin: 16px 0;
     position: relative;
-    background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
-    list-style: none;
-    padding: 0;
+    width: 353px;
+    height: 254px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 1px solid #EA7422;
+    background: linear-gradient(114deg, rgba(44, 44, 38, 0.60) 5.19%, rgba(62, 44, 21, 0.60) 98.99%);
 }
 
 .img {
-    width: 100%;
-    height: auto;
+    width: 352px;
+    height: 182px;
+    flex-shrink: 0;
+    aspect-ratio: 352/182.00;
 }
 
 .cardScript {
-    display: flex;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    width: 203px;
     margin-left: auto;
     margin-right: auto;
-    width: 67%;
-    text-align: center;
-    padding: 16px 0;
+    margin-top: 9px;
+    margin-bottom: 12px;
 }
 
 .btmHeard {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
-    border: none;
     position: absolute;
-    bottom: 20px;
-    left: 10px;
-    width: fit-content;
+    bottom: 13px;
+    left: 15px;
 }
 
 .btmNextPage {
-    background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
     border: none;
     position: absolute;
-    bottom: 20px;
-    right: 10px;
+    bottom: 13px;
+    right: 15px;
 }
 
 .count {
@@ -75,4 +69,17 @@
     font-size: 16px;
     font-weight: 600;
     margin-left: 6px;
+    letter-spacing: 0.96px;
+}
+
+.nextPage {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.like {
+    width: 21px;
+    height: 18px;
+    flex-shrink: 0;
 }

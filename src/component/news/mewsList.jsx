@@ -25,18 +25,18 @@ const newsCard = [
 
 const NewsList = () => {
 	return (
-		<div className={styles.newsListContainer}>
+		<div >
 			<ul className={styles.ul}>
 				{newsCard.map((item) => (
 					<li key={item.title} className={styles.cardList}>
 						<img src={item.url} alt={item.title} className={styles.img} />
 						<p className={styles.cardScript}>{item.script}</p>
 						<button className={styles.btmHeard}>
-							<img src={heardIcon} alt="heardIcon" width={21} height={18} />
+							<img src={heardIcon} alt="heardIcon" className={styles.like} />
 							<p className={styles.count}>{item.count}</p>
 						</button>
 						<button className={styles.btmNextPage}>
-							<img src={nextPage} alt="nextPage" width={21} height={21} />
+							<img src={nextPage} className={styles.nextPage} alt="nextPage" />
 						</button>
 					</li>
 				))}
