@@ -14,12 +14,12 @@ const Header = () => {
 				</button>
 			</div>
 			{!joinToAlliance ? (
-				<button className={styles.joinBtn} onClick={joinAllians}>
+				<button className={styles.joinBtn} onClick={openFromProfile} >
 					Стати членом альянсу
 				</button>
 			) : (
-				<div className={styles.energyContainer}>
-					<p className={styles.name}>10000</p>
+				<div className={styles.energyContainer} >
+					<p className={styles.name} >10000</p>
 					<img src={EnergyIcon} alt="energy" className={styles.energyIcon} />
 				</div>
 			)}
@@ -28,3 +28,5 @@ const Header = () => {
 };
 
 export default Header;
+
+// onClick={joinAllians}

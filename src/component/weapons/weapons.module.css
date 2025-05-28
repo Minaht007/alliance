@@ -12,8 +12,10 @@
 
 .wolfImg {
   width: 100vw;
+  height: 400px;
   position: absolute;
-  top: 68px;
+  top: 70px;
+  border: none;
 }
 
 .modalContainer {
