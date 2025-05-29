@@ -33,15 +33,15 @@ const Subscription = () => {
 				{propose.map((item, index) => (
 					<li
 						key={item.title}
-						className={styles.li}
+						className={selectedIndex === index ? `${styles.liActive} ${styles.li}` : styles.li}
 						onClick={() => setSelectedIndex(index)}
 						style={{ cursor: "pointer" }}
 					>
-						<img src={item.url} alt="coins" className={styles.img} />{" "}
-						<span className={styles.span}>{item.title}</span>{" "}
+						<img src={item.url} alt="coins" className={styles[`img${index}`]} />
+						<span className={styles.span}>{item.title}</span>
 						<div className={styles.checked}>
 							{selectedIndex === index && (
-								<img src={isActive} alt="isActive" width={26} height={26} />
+								<img src={isActive} alt="isActive" width={25} height={25} />
 							)}
 						</div>
 					</li>

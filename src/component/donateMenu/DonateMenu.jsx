@@ -15,11 +15,11 @@ const DonateMenu = () => {
 
 			<button className={styles.btn} onClick={() => setModalView("profile")}>
 				Підвищити донат
-				<img src={graf} alt="донат" />
+				<img src={graf} className={styles.btnIconFirst} alt="донат" />
 			</button>
 			<button className={styles.btn} onClick={() => setModalView("invite")}>
 				Привести друга
-				<img src={share} alt="запросити" />
+				<img src={share} alt="запросити" className={styles.btnIconSecond} />
 			</button>
 		</div>
 	);

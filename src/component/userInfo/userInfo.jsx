@@ -30,7 +30,10 @@ const ProfilePanel = () => {
 						<p className={styles.label}>Потужність</p>
 					</div>
 
-					<button className={styles.btn} onClick={() => setModalView("subscription")}>
+					<button
+						className={styles.btn}
+						onClick={() => setModalView("subscription")}
+					>
 						Підвищити
 					</button>
 				</div>
@@ -57,7 +60,10 @@ const ProfilePanel = () => {
 						<p className={styles.label}>Ваш внесок</p>
 					</div>
 
-					<button className={styles.btn} onClick={() => setModalView("subscription")}>
+					<button
+						className={`${styles.btn} ${styles.LastBtn}`}
+						onClick={() => setModalView("subscription")}
+					>
 						Покращити
 					</button>
 				</div>

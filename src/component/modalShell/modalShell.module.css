@@ -14,20 +14,17 @@
 
 .panel {
     background-color: #313423;
-    padding: 20px;
-    width: 90%;
-    max-width: 400px;
-    border-radius: 12px;
+    /* padding: 20px; */
+    /* width: 90%; */
+    /* max-width: 400px; */
     color: white;
     position: relative;
     font-family: 'Tektur', sans-serif;
+    border-radius: 9px;
+    /* background: #313423; */
+
+    width: 361px;
+
+
 }
 
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
