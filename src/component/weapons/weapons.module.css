@@ -8,6 +8,8 @@
   justify-content: end;
   align-items: center;
   flex-direction: column;
+
+  background-color: #1E2115;
 }
 
 .wolfImg {
@@ -26,11 +28,13 @@
 }
 
 .modalContainer {
-  width: 90%;
+  width: 353px;
+  height: 372px;
   border: 1px solid #ea7422;
   border-radius: 5px;
   z-index: 10;
-  margin-bottom: 93px;
+  /* margin-bottom: 93px; */
+  margin: auto;
   background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
 }
 
@@ -75,8 +79,11 @@
 }
 
 .scriptConteiner {
-  padding-top: 14px;
-  padding-bottom: 16px;
+  /* margin-top: 19px;
+  margin-bottom: 23px; */
+
+  padding-top: 19px; 
+  padding-bottom: 23px; 
 }
 
 .pScript {

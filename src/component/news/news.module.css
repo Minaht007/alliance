@@ -28,10 +28,13 @@
 }
 
 .img {
+    display: block;
     width: 352px;
     height: 182px;
     flex-shrink: 0;
     aspect-ratio: 352/182.00;
+    border: none;
+    border-radius: 5px;
 }
 
 .cardScript {

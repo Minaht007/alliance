@@ -1,4 +1,4 @@
-import bgImage from "../../assets/background/bg3.png";
+import bgImage from "../../assets/background/bg_2.jpg";
 import styles from "./weapons.module.css";
 import ModalWind from "../modalWindow/modalWindowWeapon";
 import { useState } from "react";
@@ -43,8 +43,8 @@ const Weapons = () => {
 	});
 
 	return (
-		<div className={styles.wrapper} style={{ backgroundImage: `url(${bgImage})` }}>
-			<img src={wolf} alt="wolf" className={styles.wolfImg} />
+		<div className={styles.wrapper} style={{ backgroundImage: `url(${bgImage})` }} >
+			{/* <img src={wolf} alt="wolf" className={styles.wolfImg} /> */}
 			<ModalWind title={"Танк"} isOpen={modalOpen} onClose={() => setModalOpen(false)}>
 				<div {...handlers}>
 					<div className={styles.sliderWrapper}>
@@ -115,3 +115,5 @@ const Weapons = () => {
 };
 
 export default Weapons;
+
+// style={{ backgroundImage: `url(${bgImage})` }}
