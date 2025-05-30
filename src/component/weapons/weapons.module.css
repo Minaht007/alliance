@@ -35,7 +35,11 @@
   z-index: 10;
   /* margin-bottom: 93px; */
   margin: auto;
-  background: linear-gradient(114.19deg, #2C2C26 5.19%, #3E2C15 98.99%);
+  background: linear-gradient(
+    114.19deg,
+    rgba(44, 44, 38, 0.4) 5.19%,
+    rgba(62, 44, 21, 0.4) 98.99%
+  );
 }
 
 .title {
